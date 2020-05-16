@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public int totalScore;
     public CharacterController2D controller;
     public Animator animator;
-
+    public AudioClip deadClip;
     public float runSpeed = 25f;
     float horizontalMove = 0f;
     bool jumpFlag = false;
     bool jump = false;
 
 
-
-
+ 
     // Update is called once per frame
     void Update()
     {
@@ -43,6 +43,14 @@ public class PlayerMovement : MonoBehaviour
         if (jump)
         {
             jumpFlag = true;
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == 10)
+        {
+            AudioSource.PlayClipAtPoint(deadClip, transform.position);
+            Destroy(this.gameObject);
         }
     }
 }
