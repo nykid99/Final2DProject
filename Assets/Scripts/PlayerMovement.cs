@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     bool jump = false;
 
 
- 
+
     // Update is called once per frame
     void Update()
     {
@@ -22,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
-        if(jumpFlag)
+        if (jumpFlag)
         {
             jumpFlag = false;
         }
@@ -39,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
-        
+
         if (jump)
         {
             jumpFlag = true;
@@ -51,6 +52,14 @@ public class PlayerMovement : MonoBehaviour
         {
             AudioSource.PlayClipAtPoint(deadClip, transform.position);
             Destroy(this.gameObject);
+        }
+        if (collision.gameObject.layer == 13)
+        {
+            SceneManager.LoadScene(1);
+        }
+        if(collision.gameObject.layer == 14)
+        {
+            SceneManager.LoadScene(2);
         }
     }
 }
