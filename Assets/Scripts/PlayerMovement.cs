@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController2D controller;
     public Animator animator;
     public AudioClip deadClip;
+    public AudioClip jumpClip;
     public float runSpeed = 25f;
     float horizontalMove = 0f;
     bool jumpFlag = false;
@@ -31,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
+            AudioSource.PlayClipAtPoint(jumpClip, transform.position);
         }
     }
     public void OnLanding()
