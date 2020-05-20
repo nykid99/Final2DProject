@@ -2873,6 +2873,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3652,12 +3653,12 @@ PrefabInstance:
     - target: {fileID: 4879545465249819044, guid: 5afa7e35a1075ff438b82fb2eb7f9da1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23.410809
+      value: -23.39
       objectReference: {fileID: 0}
     - target: {fileID: 4879545465249819044, guid: 5afa7e35a1075ff438b82fb2eb7f9da1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.0820675
+      value: -3.12
       objectReference: {fileID: 0}
     - target: {fileID: 4879545465249819044, guid: 5afa7e35a1075ff438b82fb2eb7f9da1,
         type: 3}
@@ -4066,8 +4067,8 @@ MonoBehaviour:
   controller: {fileID: 1902691899}
   animator: {fileID: 1902691900}
   deadClip: {fileID: 8300000, guid: b5e9bdd3eb0f347408eb081db5a31112, type: 3}
-  jumpClip: {fileID: 0}
   runSpeed: 25
+  GameOver: 0
 --- !u!58 &1902691897
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4186,7 +4187,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1961673258}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1413802679}
