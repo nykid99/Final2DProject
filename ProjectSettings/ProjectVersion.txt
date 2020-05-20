@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 m_EditorVersion: 2019.3.14f1
 m_EditorVersionWithRevision: 2019.3.14f1 (2b330bf6d2d8)
+=======
+m_EditorVersion: 2019.2.8f1
+m_EditorVersionWithRevision: 2019.2.8f1 (ff5b465c8d13)
+>>>>>>> parent of 3ae9260... Added Scene 2 still working on hearts

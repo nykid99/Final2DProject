@@ -64,11 +64,14 @@ public class PlayerMovement : MonoBehaviour
         {
             SceneManager.LoadScene(2);
         }
+<<<<<<< HEAD
         /*if (collision.gameObject.layer == 9)
         {
             GameObject.Destroy(this.gameObject);
             GameControlScript.health -= 1;
             //GameObject.Destroy(collision.gameObject);
         }*/
+=======
+>>>>>>> parent of 3ae9260... Added Scene 2 still working on hearts
     }
 }
