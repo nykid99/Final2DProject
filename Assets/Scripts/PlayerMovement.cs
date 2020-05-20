@@ -63,5 +63,11 @@ public class PlayerMovement : MonoBehaviour
         {
             SceneManager.LoadScene(2);
         }
+        if (collision.gameObject.layer == 9)
+        {
+            GameObject.Destroy(this.gameObject);
+            GameControlScript.health -= 1;
+            //GameObject.Destroy(collision.gameObject);
+        }
     }
 }
