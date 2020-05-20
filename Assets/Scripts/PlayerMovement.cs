@@ -9,7 +9,10 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController2D controller;
     public Animator animator;
     public AudioClip deadClip;
+<<<<<<< HEAD
     /*public AudioClip jumpClip;*/
+=======
+>>>>>>> parent of a82e48b... commit
     public float runSpeed = 25f;
     float horizontalMove = 0f;
     bool jumpFlag = false;
@@ -33,7 +36,10 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
+<<<<<<< HEAD
             /*AudioSource.PlayClipAtPoint(jumpClip, transform.position);*/
+=======
+>>>>>>> parent of a82e48b... commit
         }
     }
     public void OnLanding()
