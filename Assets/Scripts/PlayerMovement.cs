@@ -9,7 +9,10 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController2D controller;
     public Animator animator;
     public AudioClip deadClip;
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of a82e48b... commit
     public float runSpeed = 25f;
     float horizontalMove = 0f;
     bool jumpFlag = false;

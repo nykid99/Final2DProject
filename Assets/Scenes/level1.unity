@@ -2544,7 +2544,10 @@ MonoBehaviour:
   controller: {fileID: 1902691899}
   animator: {fileID: 1902691900}
   deadClip: {fileID: 8300000, guid: b5e9bdd3eb0f347408eb081db5a31112, type: 3}
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of a82e48b... commit
   runSpeed: 25
 --- !u!58 &1902691897
 CircleCollider2D:
