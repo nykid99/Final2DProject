@@ -432,10 +432,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a21617bc1e1430b4db32cbaf5dde441b, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   index: 2
-  levelName:
+  levelName: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -473,8 +473,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d18fc9364e2ba764fa9b61014a044834, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   followTransform: {fileID: 1902691894}
   cameraLeftBorder: {fileID: 1766963683}
   cameraRightBorder: {fileID: 2127678414}
@@ -2271,8 +2271,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a20551f09f8b37244ba839a36d3d4b7c, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   pickupClip: {fileID: 8300000, guid: ddf0aefa61c268541b81cea5b9c72027, type: 3}
 --- !u!1 &1413802677
 GameObject:
@@ -2538,14 +2538,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e7cc12a5e0c6bf74697552412a39cc4e, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   totalScore: 0
   controller: {fileID: 1902691899}
   animator: {fileID: 1902691900}
   deadClip: {fileID: 8300000, guid: b5e9bdd3eb0f347408eb081db5a31112, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+  jumpClip: {fileID: 8300000, guid: 3c9987a9559020f41a773876fcc55232, type: 3}
+>>>>>>> parent of 36463de... committing
 =======
 >>>>>>> parent of a82e48b... commit
   runSpeed: 25
@@ -2591,8 +2595,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 64c1b768f6364ad43b7c71be10c4426a, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_JumpForce: 600
   m_CrouchSpeed: 0.36
   m_MovementSmoothing: 0.05
@@ -2616,7 +2620,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
   OnCrouchEvent:
@@ -2637,7 +2641,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage:
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0

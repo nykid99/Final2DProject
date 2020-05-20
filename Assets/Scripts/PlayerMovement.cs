@@ -10,14 +10,18 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
     public AudioClip deadClip;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+    /*public AudioClip jumpClip;*/
+>>>>>>> parent of 36463de... committing
 =======
 >>>>>>> parent of a82e48b... commit
     public float runSpeed = 25f;
     float horizontalMove = 0f;
     bool jumpFlag = false;
     bool jump = false;
-    bool GameOver = false;
+    private bool GameOver = false;
 
 
 
@@ -36,6 +40,10 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
+<<<<<<< HEAD
+            /*AudioSource.PlayClipAtPoint(jumpClip, transform.position);*/
+=======
+>>>>>>> parent of a82e48b... commit
         }
     }
     public void OnLanding()
@@ -57,7 +65,7 @@ public class PlayerMovement : MonoBehaviour
         {
             AudioSource.PlayClipAtPoint(deadClip, transform.position);
             Destroy(this.gameObject);
-            GameOver = true;
+            GameOver =
         }
         if (collision.gameObject.layer == 13)
         {
@@ -68,13 +76,21 @@ public class PlayerMovement : MonoBehaviour
             SceneManager.LoadScene(2);
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         /*if (collision.gameObject.layer == 9)
+=======
+        if (collision.gameObject.layer == 9)
+>>>>>>> parent of 36463de... committing
         {
             GameObject.Destroy(this.gameObject);
             GameControlScript.health -= 1;
             //GameObject.Destroy(collision.gameObject);
+<<<<<<< HEAD
         }*/
 =======
 >>>>>>> parent of 3ae9260... Added Scene 2 still working on hearts
+=======
+        }
+>>>>>>> parent of 36463de... committing
     }
 }
