@@ -2552,7 +2552,7 @@ MonoBehaviour:
   controller: {fileID: 1902691899}
   animator: {fileID: 1902691900}
   deadClip: {fileID: 8300000, guid: b5e9bdd3eb0f347408eb081db5a31112, type: 3}
-  jumpClip: {fileID: 0}
+  jumpClip: {fileID: 8300000, guid: 3c9987a9559020f41a773876fcc55232, type: 3}
   runSpeed: 25
 --- !u!58 &1902691897
 CircleCollider2D:

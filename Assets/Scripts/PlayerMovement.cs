@@ -9,11 +9,12 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController2D controller;
     public Animator animator;
     public AudioClip deadClip;
-    public AudioClip jumpClip;
+    /*public AudioClip jumpClip;*/
     public float runSpeed = 25f;
     float horizontalMove = 0f;
     bool jumpFlag = false;
     bool jump = false;
+    private bool GameOver = false;
 
 
 
@@ -32,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
-            AudioSource.PlayClipAtPoint(jumpClip, transform.position);
+            /*AudioSource.PlayClipAtPoint(jumpClip, transform.position);*/
         }
     }
     public void OnLanding()
@@ -54,6 +55,7 @@ public class PlayerMovement : MonoBehaviour
         {
             AudioSource.PlayClipAtPoint(deadClip, transform.position);
             Destroy(this.gameObject);
+            GameOver =
         }
         if (collision.gameObject.layer == 13)
         {
